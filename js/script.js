@@ -48,7 +48,7 @@ function getUserAge(){
 //A return statement returns a value and leaves the function immediately once it does
 
 function checkWord(guessedWord){
-  if(guessedWord == "sun"){
+  if(guessedWord == 5){
     return true;
   }
   else{
@@ -57,31 +57,40 @@ function checkWord(guessedWord){
 }
 
 function guessingGame(){
-  var word = prompt("I'm thinking of a word with three letters that is in the sky");
+  var word = prompt("Guess a number between 1 and 10");
   var guessedCorrectly = checkWord(word);
     if(guessedCorrectly){
-      alert("Correct word guessed");
+      alert("Correct number guessed");
+      return true;
     }
     else{
-      alert("Incorrect word guessed");
+      alert("Incorrect number guessed");
+      return false;
     }
 }
 
 //guessingGame();
 //console.log(checkNumber());
 
-var human = "mortal";
-var god = "immortal";
-var socrates = god;
-
-if(socrates == human){
-  console.log("Socrates is mortal");
-}
-else{
-  console.log("Socrates is not human");
-}
-
 
 //console.log(hungry);
+
+
+
+for(let i = 0; i < 10; i++){
+  if(guessingGame() == true){
+    break;
+  }
+}
+
+var sleepy = true;
+var question;
+
+while(sleepy == true){
+  question = prompt("are you sleepy?, yes or no?")
+  if(question == "no"){
+    sleepy = false;
+  }
+}
 
 

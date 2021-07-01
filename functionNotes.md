@@ -44,6 +44,12 @@ var sleepy = true;
 var hungry = false;
 ```
 
+### Increment and Decrement Operators
+```
+increment++;
+decrement--;
+```
+
 ### What is a function?
 A function is a collection of javascript statements
 that performs some task. It can take in values and also
