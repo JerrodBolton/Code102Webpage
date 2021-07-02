@@ -271,4 +271,4 @@ while(stopGuessing == false){
 var amount = prompt("Enter a number");
 for(let i = 0; i < amount; i++){
   console.log(i); 
-}_
+}
