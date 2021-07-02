@@ -266,3 +266,9 @@ let stopGuessing = false;
 while(stopGuessing == false){
   stopGuessing = guessNumber();
 }
+
+//Here we prompt the user for a number and then loop that many times
+var amount = prompt("Enter a number");
+for(let i = 0; i < amount; i++){
+  console.log(i); 
+}_
